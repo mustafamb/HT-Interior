@@ -1,0 +1,936 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>HT-Interior</title>
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png" />
+    <link
+      rel="apple-touch-icon"
+      sizes="72x72"
+      href="img/apple-touch-icon-72x72.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="114x114"
+      href="img/apple-touch-icon-114x114.png"
+    />
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="fonts/font-awesome/css/font-awesome.css"
+    />
+
+    <!-- Stylesheet
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/nivo-lightbox/nivo-lightbox.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="css/nivo-lightbox/default.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900"
+      rel="stylesheet"
+    />    
+  </head>
+  <body
+    id="page-top"
+    data-spy="scroll"
+    data-target=".navbar-fixed-top"
+    onload="slider()"
+  >
+    <!-- Navigation
+    ==========================================-->
+    <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle collapsed"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span> <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand page-scroll" href="#page-top">HT-Interior</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#about" class="page-scroll">About</a></li>
+            <li><a href="#services" class="page-scroll">Services</a></li>
+            <li><a href="#portfolio" class="page-scroll">Projects</a></li>
+            <li><a href="#team" class="page-scroll">Team</a></li>
+            <li><a href="#contact" class="page-scroll">Contact</a></li>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+    </nav>
+    <!-- Header -->
+    <div class="banner">
+      <div class="slider">
+        <img src="img/views/LIVING ROOM/PRL (5).jpg" id="slideImg" />
+      </div>
+      <div class="mustu">
+        <div class="content">
+          <h1><strong>HT</strong> <span>-</span> Interior Design Studio</h1>
+          <p>Your favorite home, our favorite design.</p>
+          <a href="#about" class="btn btn-custom btn-lg page-scroll">Learn More</a>
+        </div>
+      </div>
+    </div>
+    <script>
+      var slideImg = document.getElementById("slideImg");
+
+      var img = new Array(
+        "img/works/kitchn/6k-large.jpg",
+        "img/works/kitchn/3k-large.jpg",
+        "img/works/comercial/6c-large.jpg",
+        "img/works/resedential/15r-large.jpg"
+      );
+      var len = img.length;
+      var i = 0;
+
+      function slider() {
+        if (i > len - 1) {
+          i = 0;
+        }
+        slideImg.src = img[i];
+        i++;
+        setTimeout("slider()", 3000);
+      }
+    </script>
+    <!-- About Section -->
+    <div id="about">
+      <div class="container">
+        <div class="section-title text-center center">
+          <h2>Our Story</h2>
+          <hr />
+        </div>
+        <div class="row">
+          <div class="reveal fade-left">
+            <div class="col-xs-12 col-md-6 text-center">
+              <img
+                src="img/works/resedential/27r-large.jpg"
+                class="img-responsive"
+                alt=""
+              />
+            </div>
+          </div>
+          <div class="reveal fade-right">
+            <div class="col-xs-12 col-md-6">
+              <div class="about-text">
+                <h3>The Studio</h3>
+                <p>
+                  The HT-Interior was established in 2018 by Hozefa
+                  Talachaviwala, one of the most trusted interior designers in
+                  Bangalore.
+                </p>
+                <p>
+                  HT-Interior Design Studio – a Banglore Base interior designing
+                  company. We are one of the best interior designers in
+                  Bangalore. We provide creative interiors with our expert
+                  designers at affordable prices.
+                </p>
+                <h3>How We Work</h3>
+                <p>
+                  We offer everything that makes your home beautiful,
+                  comfortable and uniquely you, including end-to-end interior
+                  services including design, execution and personalized
+                  solutions.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Services Section -->
+    <div id="services">
+      <div class="container">
+        <div class="col-md-10 col-md-offset-1 section-title text-center">
+          <h2>Our Services</h2>
+          <hr />
+          <p>
+            Home Decor and Interior Solutions
+          </p>
+        </div>
+        <div class="row ">
+          <div class="reveal fade-left">
+            <div class="col-xs-12 col-sm-4 service">
+              <img src="img/new/major-service.jpg" class="img-responsive" alt="Project Title">
+              <h3>Major Services</h3>
+              <ul>
+                <li>Carpentry</li>
+                <li>Electrical</li>
+                <li>Painting</li>
+                <li>Fabrication</li>
+                <li>Plumbing</li>
+              </ul> 
+            </div>
+          </div> 
+             <div class="reveal fade-bottom">
+                <div class="col-xs-12 col-sm-4 service"> 
+                  <img src="img/new/desin-service.jpg" class="img-responsive" alt="Project Title">
+                  <h3>Designing Services</h3>
+                  <ul>
+                    <li>Interior/Exterior Designing & Consultancy </li>
+                    <li>Restoration & Renovation</li>
+                    <li>Architectural & Interior Space Planning</li>
+                    <li>2D/3D Modeling & Rendering</li>
+                    <li>Layout Planning</li>
+                  </ul>
+                </div>
+              </div>
+            <div class="reveal fade-right">
+              <div class="col-xs-12 col-sm-4 service ">
+                <img
+                  src="img/new/home-decor.jpg"
+                  class="img-responsive"
+                  alt="Project Title"/>
+                <h3>Home Decor & Services</h3>
+                <ul>
+                  <li>Designer false-ceilings</li>
+                  <li>Wallpaper & wall-art</li>
+                  <li>Designer partitions & wall Panelling</li>
+                  <li>Designer Rugs & Carpets</li>
+                  <li>Sofa Set & Upholstery</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Portfolio Section -->
+    <div id="portfolio">
+      <div class="container">
+        <div class="section-title text-center center">
+          <h2>Projects</h2>
+          <hr />
+          <p>
+            Exceptional designs that cater to your aesthetic, functional and aspirational goals.
+          </p>
+        </div>
+        <div class="categories">
+          <ul class="cat">
+            <li>
+              <ol class="type">
+                <li>
+                  <a href="#" data-filter="*" class="active">All Projects</a>
+                </li>
+                <li><a href="#" data-filter=".residential">Residential</a></li>
+                <li><a href="#" data-filter=".kitchen">Kitchen</a></li>
+                <li><a href="#" data-filter=".commercial">Commercial</a></li>
+              </ol>
+            </li>
+          </ul>
+          <div class="clearfix"></div>
+        </div>
+        <div class="row">
+          <div class="portfolio-items">
+            <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/comercial/1c-large.png"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/comercial/1c-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/comercial/2c-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/comercial/2c-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/comercial/3c-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/comercial/3c-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/comercial/4c-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/comercial/4c-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/comercial/5c-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/comercial/5c-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/comercial/6c-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/comercial/6c-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 commercial">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/comercial/7c-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/comercial/7c-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/1k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/1k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/2k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/2k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/3k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/3k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/4k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/4k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/5k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/5k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/6k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/6k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/7k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/7k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 kitchen">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/kitchn/8k-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/kitchn/8k-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/1r-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/1r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/2r-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/2r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/3r-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/3r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/4r-large.png"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/4r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/5r-large.png"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/5r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/6r-large.png"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/6r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/7r-large.png"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/7r-smal.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/8r-large.png"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/8r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/9r-large.png"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/9r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/10r-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/10r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/11r-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/11r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4 col-lg-4 residential">
+              <div class="portfolio-item">
+                <div class="hover-bg">
+                  <a
+                    href="img/works/resedential/12r-large.jpg"
+                    title="Project Title"
+                    data-lightbox-gallery="gallery1"
+                  >
+                    <div class="hover-text">
+                      <h4>Project Name</h4>
+                    </div>
+                    <img
+                      src="img/works/resedential/12r-small.jpg"
+                      class="img-responsive"
+                      alt="Project Title"
+                    />
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Team Section -->
+    <div id="team" class="text-center">
+      <div class="overlay">
+        <div class="container">
+          <div class="col-md-8 col-md-offset-2 section-title">
+            <h2>Meet the Team</h2>
+            <hr />
+            <!-- <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+              dapibus leonec.
+            </p> -->
+          </div>
+          <div id="row">
+            <div class="col-md-12 col-sm-2 team">
+              <div class="thumbnail">
+                <img src="img/team/k1.jpg" alt="..." class="team-img" />
+                <div class="caption">
+                  <h3>Hozaifa Talachaviwala</h3>
+                  <p>Director</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Contact Section -->
+    <div id="contact">
+      <div class="container">
+        <div class="section-title text-center">
+          <h2>Contact Us</h2>
+          <hr />
+          <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit duis sed
+            dapibus leonec.
+          </p> -->
+        </div>
+        <div class="col-md-4">
+          <h3>Contact Info</h3>
+          <div class="contact-item">
+            <span>Address</span>
+            <p>
+              246/21, 5th cross, 22nd main,<br />
+              nagaraj garden jp nagar, 5th phase,<br />
+              Burhani Manzil, Bengaluru,<br />
+              karnataka 560078.
+            </p>
+          </div>
+          <div class="contact-item">
+            <span>Email</span>
+            <p>htinterior97@gmail.com</p>
+          </div>
+          <div class="contact-item">
+            <span>Phone</span>
+            <p>+91 7021006536</p>
+          </div>
+        </div>
+        <div class="col-md-8">
+          <h3>Leave us a message</h3>
+          <form onsubmit="sendEmail(); reset(); return false;" name="sentMessage" id="contactForm" novalidate>
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="text" id="name" class="form-control" placeholder="Name" required="required"/>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input type="email" id="email" class="form-control" placeholder="Email" required="required"/>
+                  <p class="help-block text-danger"></p>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <input type="text" id="myform_phone" class="form-control" placeholder="Mobile No." required="required"/>
+              <div id="phone_error" class="error hidden">Please enter a valid phone number</div>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div class="form-group">
+              <textarea name="message" id="message" class="form-control" rows="4" placeholder="Message" required="required"></textarea>
+              <p class="help-block text-danger"></p>
+            </div>
+            <div id="success"></div>
+            <button type="submit" class="btn btn-custom btn-lg" name="submit">
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div>
+      <div id="team" class="text-center">
+        <div class="overlay">
+          <!-- Google Map Copied Code -->
+          <center>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15556.499092770357!2d77.5882639!3d12.8996975!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xd563aedf6bd9cf08!2sHT-INTERIOR!5e0!3m2!1sen!2sin!4v1657267700743!5m2!1sen!2sin" 
+              width="300" 
+              height="200" 
+              style="border:0;" 
+              allowfullscreen="" 
+              loading="lazy" 
+              referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+          </center>
+        </div>
+      </div>
+    </div>
+    <div id="footer">
+      <div class="container text-center">
+        <div class="social">
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/ht_interior97/?igshid=NTdlMDg3MTY%3D"><i class="fa fa-instagram"></i></a>
+            </li>
+            <li>
+              <a href="https://ht-interior.business.site/?utm_source=gmb&utm_medium=referral"><i class="fa fa-google"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-youtube"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript" src="js/jquery.1.11.1.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <script type="text/javascript" src="js/SmoothScroll.js"></script>
+    <script type="text/javascript" src="js/nivo-lightbox.js"></script>
+    <script type="text/javascript" src="js/jquery.isotope.js"></script>
+    <script type="text/javascript" src="js/jqBootstrapValidation.js"></script>
+    <script type="text/javascript" src="js/contact_me.js"></script>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script type="text/javascript" src="js/phone.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/scroll.js"></script>
+  </body>
+</html>
